@@ -1,38 +1,119 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@0;1&family=Cinzel&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+#sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 180px;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+#sidebar nav {
+  margin-top: 10px;
+}
+
+#avatar {
+  margin: 15px auto;
+}
+
+#avatar+h4 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#sidebar p {
+  margin: 0;
+  padding: 2px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#sidebar p a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+#sidebar p:hover {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.active {
+  color: darkgreen;
 }
 
-.App-link {
-  color: #61dafb;
+#sidebar-box {
+  margin-left: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#home {
+  padding: 5vh;
+  margin-bottom: 10vh;
+}
+
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Bodoni Moda', serif;
+  padding: 0;
+}
+
+h1>span {
+  color: darkgreen;
+
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Urbanist', sans-serif;
+}
+
+
+#greeting-text {
+  padding: 10vh 5vw;
+  margin: 0 auto;
+}
+
+#greeting-text>p {
+  margin-bottom: 3vh;
+}
+
+#qualification,
+#skills {
+  padding-bottom: 7vh;
+}
+
+#qualification,
+#projects {
+  background-color: rgba(0, 118, 193, 0.1);
+}
+
+#projects {
+  padding-bottom: 10vh;
+}
+
+#contact{
+  padding-bottom: 15vh;
+}
+
+.menu-item {
+  color: darkblue;
+}
+
+.menu-item:hover {
+  color: dodgerblue;
 }
