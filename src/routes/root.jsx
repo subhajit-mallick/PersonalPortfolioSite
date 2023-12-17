@@ -51,21 +51,3 @@ export default function Root() {
     );
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* <NavLink
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""
-                            }
-                            to={`/`}>HOME</NavLink> */}

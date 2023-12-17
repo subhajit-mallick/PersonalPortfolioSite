@@ -9,14 +9,14 @@ import Footer from '../components/Footer'
 
 function Index() {
   return (
-    <>
+    <div id="index-container">
       <Home />
       <Qualification />
       <Skills />
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

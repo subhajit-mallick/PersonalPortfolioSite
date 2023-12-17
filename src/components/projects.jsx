@@ -11,6 +11,7 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import Grid from '@mui/material/Unstable_Grid2';
 import { motion } from "framer-motion"
 import ProjectItems from '../static/data/content'
+import { alertMsgForDelay } from '../static/data/content'
 
 
 function ProjCard(props) {
@@ -46,7 +47,10 @@ function ProjCard(props) {
               label={props.isLive ? "Live Demo" : "Documentation"}
               variant="outlined"
               color='primary'
-              onClick={() => { window.open(props.urlLive, '_blank') }}
+              onClick={() => {
+                if(props.delayInStart) alert(alertMsgForDelay);
+                window.open(props.urlLive, '_blank');
+              }}
             />
           </CardActions>
         </Card>
@@ -65,7 +69,7 @@ export default function Projects() {
       <Grid container spacing={0.5} display="flex" justifyContent="center" alignItems="center">
         {
           ProjectItems.map((item, i) =>
-            <ProjCard key={i} img={item.img} name={item.name} desc={item.desc} isLive={item.isLive} urlRepo={item.urlRepo} urlLive={item.urlLive} />)
+            <ProjCard key={i} img={item.img} name={item.name} desc={item.desc} isLive={item.isLive} delayInStart={item.delayInStart} urlRepo={item.urlRepo} urlLive={item.urlLive} />)
         }
       </Grid>
 

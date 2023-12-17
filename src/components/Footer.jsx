@@ -8,12 +8,17 @@ import EmailIcon from '@mui/icons-material/Email';
 const Footer = () => {
   return (
     <Box
+      className="footer"
       component="footer"
       sx={{
         backgroundColor: 'rgba(0, 118, 193, 0.1)',
         color: '#fff',
         paddingY: 3,
         textAlign: 'center',
+        pb: {
+          xs: 15,
+          lg: 0
+        },
       }}
     >
       <Box display="flex" justifyContent="center" alignItems="center" gap={2}>

@@ -9,6 +9,9 @@ p {
   font-family: 'Poppins', sans-serif;
 }
 
+/* body {
+  overflow-x: hidden;
+} */
 
 
 #sidebar {
@@ -29,7 +32,8 @@ p {
   margin: 15px auto;
 }
 
-#avatar+h4 {
+#avatar,
+h4 {
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
@@ -106,7 +110,7 @@ h2 {
   padding-bottom: 10vh;
 }
 
-#contact{
+#contact {
   padding-bottom: 15vh;
 }
 
@@ -117,3 +121,68 @@ h2 {
 .menu-item:hover {
   color: dodgerblue;
 }
+
+#qualification-box-sm {
+  display: none;
+}
+
+.swipe-up-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  #sidebar,
+  #lottie1 {
+    display: none;
+  }
+
+  .swipe-up-menu {
+    display: block;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #home {
+    padding: 0;
+    padding-right: 15vw;
+    margin: 0;
+  }
+
+  #sidebar-box {
+    margin: 0;
+  }
+
+
+  #sidebar-box {
+    overflow-x: hidden;
+  }
+
+  #qualification-box-lg {
+    display: none;
+  }
+
+  #qualification-box-sm {
+    display: block;
+  }
+}
+
+
+/* .lottie-skill-anim {
+  width: 100%;
+  padding: 1vw;
+
+  @media screen and (min-width: 600px) {
+    width: 70%;
+  }
+
+  @media screen and (min-width: 960px) {
+    width: 35%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 40%;
+  }
+} */
