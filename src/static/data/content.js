@@ -21,8 +21,8 @@ const projectItems = [
     img: ProjectImgBc,
     desc: "Leveraging Blockchain with DFINITY's Motoko for smart contract development. Frontend built with Html-Css-Bootstrap, simulating Internet of Vehicles. Alerts nearby vehicles and Toll Nakas on over-speeding. #Blockchain #Difinity",
     isLive: false,
-    urlRepo: "",
-    urlLive: "",
+    urlRepo: "https://github.com/subhajit-mallick/VOMS",
+    urlLive: "https://drive.google.com/file/d/1fDiI5AgQWq9JwuNEt333L1n0KBHBAwN4/view",
   },
   {
     name: "Jotter - A minimalist Todo list",
@@ -46,7 +46,7 @@ const projectItems = [
     img: ProjectImgPh,
     desc: "A Java-based Android Wallpaper App connecting local photographers with users. Features a beautiful UI and seamless Google Authentication for an enhanced user experience. #Java #Android #OAuth",
     isLive: true,
-    urlRepo: "",
+    urlRepo: "https://github.com/subhajit-mallick/Photon",
     urlLive: "https://play.google.com/store/apps/details?id=com.subhajit.photon&pcampaignid=web_share",
   },
   {
@@ -54,8 +54,8 @@ const projectItems = [
     img: ProjectImgPf,
     desc: "Built on React, this showcase highlights skills and projects. UI features include Lottie animation, Framer Motion, Formspree, and Material UI. Explore seamlessly for a technical dive into my work. #React #FramerMotion #MUI",
     isLive: true,
-    urlRepo: "",
-    urlLive: "",
+    urlRepo: "https://github.com/subhajit-mallick/PersonalPortfolioSite",
+    urlLive: "https://subhajit.vercel.app/",
   },
 ]
 
